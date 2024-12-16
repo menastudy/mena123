@@ -1,0 +1,20 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+def calculate_hours(a, b):
+    starttime=a
+    endtime=b
+    modvalue=(starttime+endtime) % 24
+    if (modvalue<12):
+        exacthour=modvalue
+        print(exacthour)
+        exacthour=str(exacthour) 
+    else:
+        exacthour=modvalue
+        print(exacthour)
+        exacthour = str(exacthour) 
+    return exacthour
+
+a = int(input('Enter start time: '))
+b = int(input('Enter the time for alarm to go off :'))
+c =calculate_hours(a,b)
+print(f'Time now for start  {a} and alarm go off  after {b} hours:',c)
