@@ -1,0 +1,20 @@
+
+#program to find the tips,sales tax and total amount for the food#
+def calculate_tips(price):
+    tips=float(price) * (18/100)
+    return float(tips)
+def calculate_salestax(price):
+    sales_tax=float(price) * (7/100)
+    return sales_tax
+
+name =input('Enter the food name')
+price=float(input("Enter the price of the food"))
+tips=calculate_tips(price)
+sales_tax=calculate_salestax(price)
+total_amt=price+tips+sales_tax
+
+print(f'{name}:',price)
+print('Tips(18%):',tips)
+print('Sales(7%):',sales_tax)
+print('Total_amt:',total_amt)
+
