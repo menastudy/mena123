@@ -1,0 +1,16 @@
+#This program will print the number of points that is scored by customer based on the books purchased#
+
+print ("Welcome to CSU Global BookStore")
+print("Enter the number of books purchased:")
+books=int(input())
+
+if (books == 0):
+    print("Points earned:",0)
+elif(books == 2):
+    print("Points earned:",5)
+elif(books == 4):
+    print("Points earned:",15)
+elif(books == 6):
+    print("Points earned:",30)
+elif(books >=8):
+    print("points earned:",60)
