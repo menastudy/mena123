@@ -1,0 +1,33 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+class ItemToPurchase():
+    def __init__(self,name,price,quantity):
+        self.name=name
+        self.price=price
+        self.quantity=quantity
+    def print_item_cost(self):
+        name=self.name
+        price=self.price
+        quantity=self.quantity
+        price=int(self.price)*int(self.quantity)
+        print(f"{name} {quantity} @${price}=$",price)
+        return(price)
+
+item1price=0
+item2price=0
+name=input("Enter the Item name: ")
+price=input("Enter the Price:" )
+quantity=input("Enter the quantity ")
+ItemToPurchase1=ItemToPurchase(name,price,quantity)
+
+name1=input("Enter the Item name: ")
+price1=input("Enter the price: ")
+quantity1=input("Enter the quantity ")
+ItemToPurchase2=ItemToPurchase(name1,price1,quantity1)
+
+Total= int(item1price)+int(item2price)
+print("TOTAL COST")
+item1price=ItemToPurchase1.print_item_cost()
+item2price=ItemToPurchase2.print_item_cost()
+print("Total:$",int(item1price)+int(item2price))
