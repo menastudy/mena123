@@ -1,0 +1,13 @@
+tot_num_years=int(input("enter the number of years to calculate the average rainfall:"))
+total_rainfall=0
+for i in range(0,tot_num_years):
+    for month in ('Jan','feb','mar','apr','may','jun','july','aug','sep','oct','nov','dec'):
+        month_rainfall=float(input(f"enter the rainfall for {month} in inches:"))
+        total_rainfall=total_rainfall+month_rainfall
+        
+total_months=tot_num_years*12
+average_rain_fall=total_rainfall/total_months
+
+print("Total no of Months:",total_months)
+print("Total Rainfall in inches:",total_rainfall)
+print("Average Rainfall Per Month:",average_rain_fall)
